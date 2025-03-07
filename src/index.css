@@ -1,0 +1,191 @@
+/* * {
+  background: rgb(5, 2, 56);
+  background: radial-gradient(circle, rgb(3, 3, 49) 18%, rgb(7, 50, 98) 95%, rgb(1, 66, 141) 100%);
+
+} */
+
+body {
+  /* font-family: 'Arial', sans-serif; */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(3, 3, 49);
+  color: white;
+  text-align: center;
+  padding: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: -51px;
+}
+
+.container {
+  display: block;
+  justify-content: center;
+  align-items: center;
+  text-wrap:wrap;
+  text-align: center;
+}
+
+
+.title {
+  color: aliceblue;
+  font-size: 40px;
+  font-weight: 500;
+  background: none;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title .React-span{
+  padding-left: 3px;
+  color:rgb(77, 171, 247);
+  font-weight: 400;
+}
+.react_logo{
+ padding-left: 5px;
+}
+
+.btn-container {
+  height: fit-content;
+  width: fit-content;
+}
+
+.btn {
+  /* margin-left: 150%; */
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-top: 0.5rem;
+  background: #1f3540;
+  width: 100px;
+  height: 50px;
+  color: white;
+  cursor: pointer;
+  font-family:'Times New Roman', Times, serif;
+  font-size: 22px;
+  border-radius: 16px;
+  padding-top:5%;
+  transition: transform 0.2s, box-shadow 0.34s;
+  /* border:2px solid rgb(5, 90, 133); */
+}
+
+.btn:hover{
+  box-shadow: 0 0 30px 2px;
+}
+
+.btn:active{
+  transform : scale(0.95)
+}
+
+.board{
+  border-radius: 16px;
+  height: fit-content;
+  width:fit-content;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: -4%;
+}
+.boxes{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 180px;
+  width: 160px;
+  margin: 5px 3px;
+  overflow: hidden;
+  /* border: 2px solid white; */
+  background: #1f3450;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.5s;
+}
+.boxes:hover{
+  box-shadow: 0px 0px 20px 2px rgb(43, 159, 248);
+}
+.boxes:active{
+  transform: scale(0.95);
+}
+
+.image{
+  height:150px ;
+  width: 140px;
+  border-radius: 12px;
+}
+
+.mark {
+  background-color: rgba(43, 159, 248, 0.639) !important;
+  transition: transform 0.5s;
+  transform: scale(1.2);
+  border: 2px solid #f8f8f8;
+}
+
+.lock{
+  background-color: rgba(175, 0, 0, 0.741);
+  box-shadow: 0 0 10px 10px rgb(255, 85, 0);
+}
+/* Media Queries for Responsiveness */
+
+/* Tablets and small desktops */
+@media (max-width: 768px) {
+  .title {
+    font-size: 30px;
+  }
+
+  .react_logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .btn {
+    width: 90px;
+    height: 45px;
+    font-size: 20px;
+  }
+
+  .boxes {
+    height: 140px;
+    width: 120px;
+  }
+
+  .image {
+    height: 110px;
+    width: 100px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .title {
+    font-size: 24px;
+  }
+
+  .react_logo {
+    width: 24px;
+    height: 24px;
+  }
+
+  .btn {
+    width: 80px;
+    height: 40px;
+    font-size: 18px;
+  }
+
+  .board {
+    width: 100%;
+  }
+
+  .boxes {
+    height: 100px;
+    width: 90px;
+    margin: 3px;
+  }
+
+  .image {
+    height: 90px;
+    width: 80px;
+  }
+}

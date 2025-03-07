@@ -1,2 +1,8 @@
-# Tic-Tac-Toe-Game
-A nostalgic classic brought to life on your device! Built with React JS, Tailwind, Redux, and more, this fully functional game delivers a seamless and enjoyable experience for all. Relive the fun, right from your screen!
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
